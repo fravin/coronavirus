@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Coronavírus/Covid-19 </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="fonts/flaticon-covid/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    
+    <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2">
+            <div class="mb-0 site-logo"><a href="index.html" class="mb-0">COVID-19<span class="text-primary"></span> </a></div>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="#"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-link">
+                  <a href="prevention.html" class="nav-link">Prevenção</a>
+                </li>
+                <li><a href="symptoms.html" class="nav-link">Sintomas</a></li>
+                <li><a href="about.html" class="active">Gerar certificado</a></li>
+
+
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
+
+        </div>
+      </div>
+
+    </header>
+
+
+    
+
+
+    <div class="hero-v1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mr-auto text-center text-lg-left ">
+            <span class="d-block subheading ">Certificado de vacinação</span>
+            <h1 class="heading mb-3">Vacinação Covid</h1>
+            <p class="mb-5">Uma nova expressão deve começar a fazer parte do vocabulário dos viajantes: certificado de vacinação. Esse recurso digital, que armazena dados sobre testes e sobre vacina, está em fase de implementação por diferentes organizações e empresas. Tudo indica que veio pra ficar – pelo menos durante a pandemia de coronavírus.
+
+              A ideia é que ao portar um documento digital não seja mais necessário apresentar um teste com resultado negativo ou fazer quarentena.</p>
+            <p class="mb-4"><a href="https://www.skyscanner.com.br/noticias/certificado-vacinacao-covid#certificado-dispon%C3%ADvel" class="btn btn-primary">Saber mais </a></p>
+
+
+
+          </div>
+          <div class="col-lg-6">
+            <figure class="illustration">
+              <img src="images/protect.png" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <!-- MAIN -->
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="certificado.php" method="POST">
+              <div class="row mb-5">
+                <div class="col-lg-12 mx-auto text-center">
+                  <h2 class="mb-4 section-heading">Formulário do certificado </h2>
+                  <p>Preencha os campos do formulário para emitir seu certificado</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div></div>
+                  <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="name" name="nome"id="fname" class="form-control" value="" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label>Vacina</label>
+                    <select id="select" name="vacina" class="form-control" required>
+                    <option value="" selected disabled hidden>Selecione a vacina</option>
+                      <option value="Pfizer">Pfizer</option>
+                      <option value="CoronaVac">CoronaVac</option>
+                      <option value="Johnson & Johnson">Johnson & Johnson</option>
+                      <option value="Covaxin">Covaxin</option>
+                      <option value="AstraZeneca">AstraZeneca</option>
+                      <option value="Sputnik V">Sputnik V</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Primeira Dose</label>
+                    <input type="date" name="pdose" id="pdose" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Segunda Dose</label>
+                    <input type="date" name="sdose" id="sdose" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+<br>
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="submit" name="botao" class="btn btn-primary" value="Gerar certificado">
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+
+          <div class="col-lg-6">
+            <img src="images/5053172.jpg" alt="Image" class="img-fluid">
+          </div>
+
+
+    
+    
+
+
+
+
+          <div class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <h2 class="footer-heading mb-4">Saiba mais</h2>
+                  <p >Dada a velocidade de disseminação da COVID-19, produzir respostas rápidas para questões como as listadas, é fundamental para o controle da pandemia.</p>                  <div class="my-5">
+                    <a href="https://www.facebook.com/coronavirus_info/?page_source=bookmark&hoisted_module_types[0]=update&hoisted_module_types[1]=vaccine_finder&hoisted_module_types[2]=vaccine_tracker&hoisted_module_types[3]=latest_news" class="pl-0 pr-3 iconverde"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/search?q=covid%20brasil&src=typeahead_click" class="pl-3 pr-3 iconverde"><span class="icon-twitter"></span></a>
+                    <a href="#" class="pl-3 pr-3 iconverde"><span class="icon-instagram "></span></a>
+                    <a href="https://br.linkedin.com/company/ministeriodasaude" class="pl-3 pr-3 iconverde"><span class="icon-linkedin"></span></a>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <h2 class="footer-heading mb-4">Links Rápidos</h2>
+                      <ul class="list-unstyled ">
+                        <li><a class="iconverde" href="symptoms.html">Sintomas</a></li>
+                        <li><a class="iconverde" href="prevention.html">Prevenção</a></li>
+                        <li><a class="iconverde" href="blog.html">Blog</a></li>
+                        <li><a class="iconverde" href="about.html">Certificado de vacinação</a></li>
+                        <li><a class="iconverde" href="contact.html">Contate-Nos</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4">
+                      <h2 class="footer-heading mb-4">Link útil</h2>
+                      <ul class="list-unstyled">
+                        <li><a class="iconverde" href="https://coronavirus.ceara.gov.br/profissional/">Profissional de saúde</a></li>
+                        <li><a class="iconverde" href="https://portal.fiocruz.br/Covid19"> Portal da FIOCRUZ</a></li>
+                        <li><a class="iconverde" href="https://www.tce.sp.gov.br/6524-covid-19-fiqueemcasa-proteja-sua-saude-sua-familia-e-seus-amigos">Proteja sua família</a></li><!-- Site do governo de são paulo sobre família -->
+                        <li><a class="iconverde" href="https://www.google.com/search?q=covid+no+mundo&rlz=1C1AVFC_enBR867BR867&sxsrf=ALeKk00EOr3Lj65k9MF3JGQlMifHLTUI4w%3A1624142756549&ei=pHPOYO7xIP7R1sQP0uewkAg&oq=covid+no+mundo&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAELEDMgUIABCxAzIICAAQsQMQgwEyAggAMggIABCxAxCDATICCAAyAggAMgIIADICCAAyAggAOgcIIxCwAxAnOgQIIxAnOgQIABBDOgYIABAHEB46BwgAELEDEENQkFZY0WhgiGtoAXAAeACAAYIBiAHoCJIBAzcuNJgBAKABAaoBB2d3cy13aXrIAQHAAQE&sclient=gws-wiz&ved=0ahUKEwju08Wg46TxAhX-qJUCHdIzDIIQ4dUDCBE&uact=5https://www.google.com/search?q=covid+no+mundo&rlz=1C1AVFC_enBR867BR867&sxsrf=ALeKk00EOr3Lj65k9MF3JGQlMifHLTUI4w%3A1624142756549&ei=pHPOYO7xIP7R1sQP0uewkAg&oq=covid+no+mundo&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAELEDMgUIABCxAzIICAAQsQMQgwEyAggAMggIABCxAxCDATICCAAyAggAMgIIADICCAAyAggAOgcIIxCwAxAnOgQIIxAnOgQIABBDOgYIABAHEB46BwgAELEDEENQkFZY0WhgiGtoAXAAeACAAYIBiAHoCJIBAzcuNJgBAKABAaoBB2d3cy13aXrIAQHAAQE&sclient=gws-wiz&ved=0ahUKEwju08Wg46TxAhX-qJUCHdIzDIIQ4dUDCBE&uact=5">Covid no mundo</a></li><!-- Site da google referente a COVID mundial-->
+                        <li><a class="iconverde" href="https://butantan.gov.br/">Instituto BUTANTAN</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4">
+                      <h2 class="footer-heading mb-4">Recursos</h2>
+                      <ul class="list-unstyled">
+                        <li><a class="iconverde" href="https://www.gov.br/saude/pt-br">Ministério da saúde</a></li><!-- Site da organização mundial da Saúde-->
+                        <li><a class="iconverde" href="https://www.who.int/eportuguese/countries/bra/pt/">OMS</a></li> <!-- Site do centro de controle e prevenção de doenças-->
+                        <li><a class="iconverde" href="https://covid.saude.gov.br/">Coronavírus no Brasil</a></li><!-- Site do governo brasileiro sobre a covid -->
+                        <li><a class="iconverde" href="https://www.gov.br/anvisa/pt-br">ANVISA</a></li><!-- Site do ANVISA sobre a covid -->
+                        <li><a class="iconverde" href="https://www.conass.org.br/painelconasscovid19/">CONASS</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <div class="border-top pt-5">
+                    <p class="copyright"><small>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados  <i class="text-danger" aria-hidden="true"></i>  <a href="#" target="_blank" ></a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
+      
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+
+
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
